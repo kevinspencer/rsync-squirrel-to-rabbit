@@ -6,7 +6,7 @@ if [ ! -d "/Volumes/rabbit" ]; then
 fi
 
 rsync -avhi --delete \
-  --filter='protect home/' \
+  --exclude='home/' \
   --exclude=".Spotlight-V100" \
   --exclude=".fseventsd" \
   --exclude=".Trashes" \
