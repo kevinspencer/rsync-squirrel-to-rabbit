@@ -5,7 +5,7 @@ if [ ! -d "/Volumes/rabbit" ]; then
     exit 1
 fi
 
-rsync -avhi --delete \
+rsync -avh --delete \
   --exclude='home/' \
   --exclude=".Spotlight-V100" \
   --exclude=".fseventsd" \
